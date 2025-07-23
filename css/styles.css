@@ -1204,3 +1204,20 @@ ul {
     background-color: #070707;
     color: white;
 }
+@media (max-width: 992px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 15px; 
+    }
+    .main-nav li {
+        margin: 0 15px 10px 15px; 
+    }
+}
+@media (max-width: 768px) {
+    .learn-more-btn {
+        width: 60px;
+        height: 60px;
+        bottom: 20px; 
+        right: 20px;  
+    }
+}
