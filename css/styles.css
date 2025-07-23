@@ -1221,3 +1221,228 @@ ul {
         right: 20px;  
     }
 }
+/* Header Adjustments */
+@media (max-width: 992px) {
+    
+    .main-header .container {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .main-nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .main-nav li {
+        margin: 0 15px 10px 15px; 
+    }
+    .user-actions {
+        margin-top: 15px;
+    }
+
+  
+    .overview-section .container {
+        /* No specific 992px adjustments here in your original code, relies on 768px */
+    }
+
+
+    .step-item {
+        width: calc(50% - 10px); 
+    }
+    .nav-arrow.left-arrow,
+    .nav-arrow.right-arrow {
+        margin: 0; 
+    }
+    .carousel-nav {
+        left: 0;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+
+    /* Contact Section Adjustments */
+    .contact-section .container {
+        flex-direction: column; 
+        max-width: 90%; 
+    }
+    .contact-image-side {
+        height: 300px; 
+    }
+
+    /* Footer Adjustments */
+    .main-footer .footer-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .main-footer .footer-left {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .main-footer .footer-left p {
+        max-width: none;
+    }
+    .main-footer .footer-links {
+        justify-content: space-around; 
+        width: 100%;
+        margin-top: 30px;
+    }
+    .main-footer .link-column {
+        margin-bottom: 30px;
+        text-align: left; 
+    }
+    .social-icons {
+        justify-content: center;   
+      }
+}
+
+@media (max-width: 768px) {
+   
+    .hero-section {
+        padding: 60px 15px; 
+    }
+    .hero-section h1 {
+        font-size: 2.5em; 
+    }
+    .hero-section p {
+        font-size: 1em; 
+    }
+
+   
+    .overview-section .container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .overview-section .year {
+        margin-bottom: 20px; 
+    }
+    .overview-section p:last-of-type {
+        margin-left: 0; 
+        max-width: 90%; 
+        padding: 0 10px; 
+    }
+
+
+  
+    .steps-grid {
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+        scroll-snap-type: x mandatory; 
+        scrollbar-width: none; 
+        -ms-overflow-style: none;
+    }
+    .steps-grid::-webkit-scrollbar {
+        display: none; 
+    }
+    .step-item {
+        width: calc(100% - 20px); 
+        min-width: 80%; 
+        scroll-snap-align: start; 
+    }
+    .how-it-works-section .container {
+        padding: 0 10px; 
+    }
+    .carousel-nav {
+        display: none; 
+    }
+
+    
+    .transform-section h2 {
+        font-size: 2.2em; 
+    }
+    .learn-more-btn {
+        width: 60px;
+        height: 60px;
+        bottom: 20px; 
+        right: 20px;
+    }
+
+   
+    .green-growth-hub-section h2 {
+        font-size: 2em;
+    }
+    .green-growth-hub-section .intro-text {
+        font-size: 1em;
+    }
+    .articles-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+@media (max-width: 480px) {
+   
+    .main-header .logo {
+        font-size: 20px; 
+    }
+    .main-nav {
+        width: 100%;
+    }
+    .main-nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .main-nav li {
+        margin: 5px 0; 
+    }
+    .user-actions {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+   
+    .hero-section h1 {
+        font-size: 2em; 
+    }
+    .hero-section p {
+        font-size: 1em;
+    }
+    .hero-section .btn {
+        padding: 12px 25px; 
+        font-size: 1em;
+    }
+
+  
+    .overview-section .year {
+        font-size: 4em; 
+    }
+    .overview-section p {
+        font-size: 0.9em; 
+    }
+
+    
+    .how-it-works-section h2,
+    .green-growth-hub-section h2,
+    .contact-form-side h2 {
+        font-size: 2em; 
+    }
+
+ 
+    .transform-section h2 {
+        font-size: 1.8em; 
+    }
+    .learn-more-btn {
+        width: 50px;
+        height: 50px; 
+    }
+
+  
+    .contact-form-side {
+        padding: 20px; 
+    }
+
+ 
+    .main-footer .footer-left {
+        padding: 0 10px;
+    }
+    .main-footer .footer-links {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .link-column {
+        width: 100%; 
+        min-width: unset;
+        margin-bottom: 20px;
+    }
+}
